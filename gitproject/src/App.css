@@ -1,0 +1,67 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  /* text-align: center; */
+  /* position: relative; */
+}
+header {
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  background: cornflowerblue;
+  align-items: center;
+}
+
+.i {
+  display: none;
+}
+.mmenu {
+  display: none;
+}
+.error {
+  border: 1px red solid;
+}
+@media only screen and (max-width: 600px) {
+  .i {
+    display: block;
+    position: absolute;
+    top: 1.8rem;
+    right: 3rem;
+    cursor: pointer;
+  }
+
+  .i:hover {
+    opacity: 0.5;
+  }
+  footer {
+    opacity: 0;
+  }
+  .menu {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .mmenu {
+    position: absolute;
+    top: 15vh;
+    height: 85vh;
+    right: 0;
+    width: 30%;
+    background: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    z-index: 1;
+    pointer-events: none;
+    text-align: center;
+    padding-top: 1rem;
+    /* transform: rotate3d(90deg); */
+    transition: 5s ease-in-out;
+  }
+
+  /* .li {
+    cursor: pointer;
+  }
+  .li:hover {
+    opacity: 0.5;
+  } */
+}
